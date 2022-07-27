@@ -6,7 +6,7 @@ Twitter bootstrap is great, but it's very heavy for mobile-first applications. W
 This code was built for personal needs, including all needed code for future projects.
 
 ## Resources
-* A file with just 4KB, you'll get a 12-grid resizable columns (which can be hidden on desktp and/or mobile)
+* A file with just 4KB, you'll get a 12-grid resizable columns (which can be hidden on desktop/mobile)
 * Masonry-like gallery, where you can set how many lines should appear, the min. height of each thumbnail and automatic resizing (jQuery is required, working out of the box)
 * A modal box template, which you can add your own functionality (Javascript required)
 * A tabbing system; tabs inside tabs; tabs under the panel (jQuery is required, working out of the box)
