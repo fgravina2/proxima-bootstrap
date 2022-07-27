@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Proxima Bootstrap</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link href="../css/proxima.bootstrap.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600i,700" rel="stylesheet">
+</head>
+<body class="opensans dark">
+	<div class="fixed center" style="width: 80%">
+		<div class="row">
+			<div class="col12 s6">				
+				<div class="panel darker rounded">
+					<h1>Tabs!</h1>
+					<div class="tab">
+						<span tab="tab1" class="tab-label" tab="1">Tab 1</span>
+						<span tab="tab2" class="tab-label" tab="2">Tab 2</span>
+						<span tab="tab3" class="tab-label" tab="3">Tab 3</span>
+						<span tab="tab4" class="tab-label" tab="4">Tab 4</span>
+						
+						<div class="tab-panel" id="tab1">
+							<div class="panel darker rounded">
+								Panel inside a Panel
+							</div>
+							<div class="panel lighter rounded">
+								And now, a tab inside a tab!<br>
+								<div class="tab">
+									<span tab="tab10" class="tab-label">Tab 1</span>
+									<span tab="tab20" class="tab-label">Tab 2</span>
+									<span tab="tab30" class="tab-label">Tab 3</span>
+									<span tab="tab40" class="tab-label">Tab 4</span>
+									
+									<div class="tab-panel" id="tab10">
+										Tab Area 1
+									</div>
+									
+									<div class="tab-panel" id="tab20">
+										Tab Area 2
+									</div>
+									
+									<div class="tab-panel" id="tab30">
+										Tab Area 3
+									</div>
+									
+									<div class="tab-panel" id="tab40">
+										Tab Area 4
+									</div>			
+								</div>
+							</div>
+						</div>
+						
+						<div class="tab-panel" id="tab2">
+							Tab Area 2
+						</div>
+						
+						<div class="tab-panel" id="tab3">
+							Tab Area 3
+						</div>
+						
+						<div class="tab-panel" id="tab4">
+							Tab Area 4
+						</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col12 s6">
+				<div class="panel darker rounded">
+					<h1>Tabs on bottom!</h1>
+					<p>It's easy: just invert the Tab HTML positioning and put "tab-bottom" for correct CSS.</p>
+					<div class="tab tab-bottom">
+						<div class="tab-panel" id="tab1">
+							Tab area 1
+						</div>
+						
+						<div class="tab-panel" id="tab2">
+							Tab area 2
+						</div>
+						
+						<div class="tab-panel" id="tab3">
+							Tab area 3
+						</div>
+					
+						<span tab="tab1" class="tab-label" tab="1">Tab 1</span>
+						<span tab="tab2" class="tab-label" tab="2">Tab 2</span>
+						<span tab="tab3" class="tab-label" tab="3">Tab 3</span>
+					</div>					
+				</div>
+				
+				<div class="panel darker rounded sandbox">
+					<h1>Sandboxed</h1>
+					<p>Tab System shouldn't be activated here because of the "sandbox" class in this panel.</p>
+					<div class="tab">					
+						<span tab="tab1" class="tab-label" tab="1">Tab 1</span>
+						<span tab="tab2" class="tab-label" tab="2">Tab 2</span>
+						<span tab="tab3" class="tab-label" tab="3">Tab 3</span>				
+						<div class="tab-panel" id="tab1">
+							Tab area 1
+						</div>						
+						<div class="tab-panel" id="tab2">
+							Tab area 2
+						</div>						
+						<div class="tab-panel" id="tab3">
+							Tab area 3
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+		<div class="footer panel darker rounded">
+			All tabs are <b>independent</b>, using the same jQuery code and just a few class elements!
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="../js/proxima.bootstrap.js"></script>
+</body>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Proxima Bootstrap</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link href="../css/proxima.bootstrap.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600i,700" rel="stylesheet">
+</head>
+<body class="opensans darker">
+	<div class="center" style="width: 80%">
+		<div class="panel rounded darkest sandbox">
+			<h1>Sandboxed Examples!</h1>
+			<p>
+				The Examples below shouldn't activate ANY Javascript function from the special elements, simply because they're sandboxed. Also, some positioning and default layouts must be reset!
+			</p>
+		</div>
+		<div class="panel rounded darkest sandbox">
+			<h1>Tab System Examples (should be broken)!</h1>
+			<div class="tab">
+				<span tab="tab1" class="tab-label" tab="1">Tab 1</span>
+				<span tab="tab2" class="tab-label" tab="2">Tab 2</span>
+				<span tab="tab3" class="tab-label" tab="3">Tab 3</span>				
+				<div class="tab-panel" id="tab1">
+					Tab area 1
+				</div>						
+				<div class="tab-panel" id="tab2">
+					Tab area 2
+				</div>						
+				<div class="tab-panel" id="tab3">
+					Tab area 3
+				</div>
+			</div>	
+		</div>
+		<div class="panel rounded darkest sandbox">
+			<h1>Modal Code! (must not work!)</h1>
+			<div class="modal">
+				<div class="modal-content black noselect">
+					<h1>Message!</h1>
+					<p class="text-justify">Mauris viverra auctor turpis, at tempus est accumsan sit amet. Integer varius, elit a feugiat varius, nisi nibh hendrerit tortor, et mattis diam risus a lorem. Aenean elit nisi, mattis ut fermentum at, dignissim in metus. Vivamus posuere semper nisi, id rutrum justo egestas nec. Vivamus at odio ac enim rutrum laoreet. Quisque et semper augue. </p>
+					<button class="btn outline success">OK</button><button class="btn outline alert">CANCEL</button>
+				</div>
+			</div>
+		</div>
+		<div class="panel rounded darkest sandbox">
+			<h1>Sandboxed CSS </h1>
+			<style>
+				#skin .panel1 { background: #444 !important; padding: 5px !important; }
+				#skin .panel2 { background: #333 !important; padding: 5px !important; }
+				#skin .panel3 { background: #222 !important; padding: 5px !important; margin: 0px -10px !important; }
+				#skin .panel4 { background: #111 !important; padding: 5px !important; }
+				#skin .tab { color: red !important; }
+			</style>
+			<div id="skin">			
+				<div class="panel1 tab">
+					That's how it would work. Inside "sandbox" the user can upload their own CSS code, and it will be limited inside a personal ID. Example: "skin-1772".
+				</div>		
+				<div class="panel2">
+					The ID must be added before every user's rule. If the user puts "div a {}", it must be translated to "#skin-1772 div a {}". IDs must be blocked for input, because it would collapse against other used IDs throught the website.
+				</div>
+				<div class="panel3 textcenter">
+					All CSS properties must have "!important" added in each property. CSS classes can be used. This one simply changes the margin and background, the text centering was set by "textcenter" class.
+				</div>
+				<div class="panel4 fixed">
+					Div with class "fixed", hey, it now has relative positioning!
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>

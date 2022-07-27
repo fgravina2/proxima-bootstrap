@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Proxima Login Form Test</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link href="../css/proxima.bootstrap.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600i,700" rel="stylesheet">
+</head>
+<body class="opensans darker">
+	<div class="fixed center darkest rounded shadow overflow" style="width:400px;height:300px;">
+		<form action="/user/login" method="post" class="form">
+			<h2>Login form</h2>
+			<div class="label-input">
+				<label class="noselect" for="username">Username</label>
+				<input type="text" name="username" id="username" placeholder="Username">		
+			</div>
+			<br>
+				
+			<div class="label-input">
+				<label class="noselect" for="password">Password</label>
+				<input type="password" name="password" id="password" placeholder="Password">
+			</div>
+			
+			<div class="form-bottom">
+					<div class="label-checkbox checkbox-required">
+						<input type="checkbox" class="css-checkbox" id="keep-logged"  checked="checked"/>
+						<label for="keep-logged" name="keep-logged" class="css-label lite-gray-check">
+							Keep me logged
+						</label>
+					</div>
+					<input type="submit" class="btn rounded black" value="Submit">			
+				</div>			
+		</form>
+	</div>
+</body>
